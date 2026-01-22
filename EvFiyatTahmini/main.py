@@ -7,7 +7,7 @@ df = pd.read_csv(r"C:\Users\Lenovo\Desktop\ML_Projects\EvFiyatTahmini\evler_200.
 X = df[["m2","oda","yas","uzaklik","kira"]]
 y = df["fiyat"]
 X_train , X_test , y_train , y_test = train_test_split(
-    X,y,test_size=0.01,random_state=2
+    X,y,test_size=0.2,random_state=2
 )
 model = LinearRegression()
 model.fit(X_train,y_train)
